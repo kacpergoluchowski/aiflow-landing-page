@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
+
 body {
     background-color: rgba(5, 13, 24);
     color: white;
-    font-family: "Inter";
-}
+    font-family: "Inter", sans-serif;}
 
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +17,6 @@ nav {
 
 .nav-logo {
     width: 150px;
-    height: max-content;
 }
 
 .nav-links {
@@ -31,4 +31,56 @@ nav {
     height: 60px;
     width: 200px;
     border-radius: 10px;
+    font-size: 18px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 50px;
+}
+
+.hero-span {
+    color: rgba(184, 162, 219);
+    background: rgba(29, 28, 70);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.hero-title {
+    font-size: 80px;
+    margin: 20px 0;
+    line-height: 1.1;
+}
+
+.hero-content {
+    font-size: 30px;
+    width: 500px;
+    color: rgba(168, 174, 187);
+}
+
+.hero-image {
+    width: 1000px;
+    border: solid gray 1px;
+    border-radius: 20px;
+    box-shadow: 10px 0px 30px 12px rgba(44, 27, 100);
+}
+
+.hero-buttons button {
+    width: 250px;
+    height: 65px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.hero-button-start-building {
+    background: rgba(98, 59, 218);
+    color: white;
+}
+
+.hero-button-learn-more {
+    background: transparent;
+    border: solid gray 1px;
+    color: white;
 }
