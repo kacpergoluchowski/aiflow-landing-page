@@ -1,86 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
 
 body {
-    background-color: rgba(5, 13, 24);
-    color: white;
-    font-family: "Inter", sans-serif;}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: 70px;
-    padding-top: 20px;
-}
-
-.nav-logo {
-    width: 150px;
-}
-
-.nav-links {
-    display: flex;
-    gap: 50px;
-    list-style: none;
-}
-
-.nav-button {
-    background: rgba(97, 53, 220);
-    color: white;
-    height: 60px;
-    width: 200px;
-    border-radius: 10px;
-    font-size: 18px;
-}
-
-.hero {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-block: 50px;
-}
-
-.hero-span {
-    color: rgba(184, 162, 219);
-    background: rgba(29, 28, 70);
-    padding: 10px;
-    border-radius: 30px;
-}
-
-.hero-title {
-    font-size: 80px;
-    margin: 20px 0;
-    line-height: 1.1;
-}
-
-.hero-content {
-    font-size: 30px;
-    width: 500px;
-    color: rgba(168, 174, 187);
-}
-
-.hero-image {
-    width: 1000px;
-    border: solid gray 1px;
-    border-radius: 20px;
-    box-shadow: 10px 0px 30px 12px rgba(44, 27, 100);
-}
-
-.hero-buttons button {
-    width: 250px;
-    height: 65px;
-    font-size: 18px;
-    border-radius: 10px;
-}
-
-.hero-button-start-building {
-    background: rgba(98, 59, 218);
+    background: rgba(4, 13, 24);
     color: white;
 }
 
-.hero-button-learn-more {
-    background: transparent;
-    border: solid gray 1px;
-    color: white;
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 25px;
+        border-bottom: solid rgba(12, 15, 31) 1px;
+    }
+
+    .nav-logo{
+        width: clamp(50px, 30vw, 125px);
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-action-buttons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-button {
+        background: rgba(88, 36, 225);
+        color: white;
+        padding: 10px 20px;
+        font-size: 12px;
+        border-radius: 7px;
+    }
+
+    .nav-hamburger-menu {
+        width: 25px;
+        height: 25px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-block: 30px;
+    }
+
+    .hero-span {
+        background: rgba(20, 15, 54);
+        color: rgba(212, 186, 247);
+        padding: 5px 10px;
+        border-radius: 30px;
+    }
+
+    .hero-powered-icon {
+        width: 15px;
+        object-fit: cover;
+    }
+
+    .hero-title {
+        text-align: center;
+        font-size: clamp(50px, 10vw, 75px);
+        margin-block: 6px;
+    }
+
+    .hero-content {
+        text-align: center;
+        width: 80%;
+        font-size: clamp(17px, 4vw, 21px);
+        line-height: 1.4;
+        color: rgba(187, 189, 204)
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0px 10px;
+        gap: 10px;
+    }
+
+    .hero-buttons button {
+        width: clamp(300px, 50vw, 400px);
+        height: 45px;
+        font-size: 16px;
+        border-radius: 10px;
+        color: white;
+    }
+
+    .hero-button-start-building {
+        background-color: rgba(88, 36, 225);
+    }
+
+    .hero-button-learn-more {
+        background-color: transparent;
+        border: solid rgba(83, 81, 111) 2px;
+    }
+
+    .hero-image {
+        width: 90%;
+        border: solid rgba(197, 148, 239) 1px;
+        border-radius: 20px;
+        box-shadow:
+    0 0 40px rgba(124, 58, 237, 0.6),
+    0 30px 80px rgba(0, 0, 0, 0.6);
+    
+    }
 }
