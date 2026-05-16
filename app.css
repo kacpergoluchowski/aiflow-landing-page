@@ -4,30 +4,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  background: rgba(4, 13, 24);
+  font-family: "Inter", sans-serif;
+  background: rgb(4, 13, 24);
   color: white;
 }
 
 button {
   cursor: pointer;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* -------------------------------------- MAX 918 PX -------------------------------------- */
 
-.navbar {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 25px;
-  border-bottom: solid rgba(12, 15, 31) 1px;
+  border-bottom: solid rgb(12, 15, 31) 1px;
 }
 
 .nav-logo {
@@ -38,24 +41,24 @@ button {
   display: none;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: white;
-}
-
 .nav-action-buttons {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.nav-button {
-  background: rgba(88, 36, 225);
-  border: solid rgba(113, 56, 242) 1px;
+.nav-get-started {
+  background: rgb(88, 36, 225);
+  border: solid rgb(113, 56, 242) 1px;
   color: white;
   padding: 10px 20px;
   font-size: 12px;
   border-radius: 7px;
+}
+
+.nav-menu-button {
+  background: transparent;
+  border: none;
 }
 
 .nav-hamburger-menu {
