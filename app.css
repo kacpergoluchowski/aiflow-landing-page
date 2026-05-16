@@ -7,6 +7,7 @@
 }
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: "Inter", sans-serif;
   background: rgb(4, 13, 24);
@@ -208,6 +209,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 50px;
 }
 
 .pricing-span {
@@ -225,22 +227,73 @@ a {
   margin-bottom: 20px;
 }
 
-.pricing-card {
+.pricing-cards {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  border: solid rgb(23, 31, 49) 1px;
+  width: 100vw;
+  gap: 10px;
+}
+
+.pricing-card {
   width: 90%;
+  border: solid rgba(26, 35, 52) 1px;
+  padding: 10px 15px;
   border-radius: 15px;
+}
+
+.pricing-card-type {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: solid rgba(26, 35, 52) 1px;
+  gap: 10px;
 }
 
 .pricing-card-icon {
   width: clamp(60px, 10vw, 90px);
 }
 
-.pricing-card-title {
+.pricing-card-name {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.pricing-card-title,
+.pricing-card-price {
   font-size: clamp(10px, 4vw, 25px);
-  margin-bottom: 5px;
+}
+
+.pricing-card-content,
+.pricing-card-period {
+  font-size: clamp(11px, 1.8vw, 14px);
+  color: rgb(175, 183, 197);
+}
+
+.pricing-card-benefits-list {
+  list-style-type: none;
+  padding: 20px;
+  font-size: clamp(11px, 1.8vw, 14px);
+  color: rgb(175, 183, 197);
+}
+
+.pricing-card-benefits-list li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pricing-card-benefits-list-tick-icon {
+  width: 20px;
+}
+
+.pricing-card-get-started {
+  width: 100%;
+  background: rgb(88, 36, 225);
+  height: 40px;
+  border-radius: 15px;
+  color: white;
 }
 
 @media (min-width: 918px) {
@@ -282,6 +335,17 @@ a {
   }
 }
 
+@media (min-width: 1100px) {
+  .pricing-cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .pricing-card {
+    width: 28vw;
+  }
+}
+
 @media (min-width: 1318px) {
   .hero {
     flex-direction: row;
@@ -306,6 +370,22 @@ a {
   .hero-image {
     width: 55vw;
   }
+
+  .most-popular-sub-type {
+    position: relative;
+    border: solid rgb(88, 36, 225) 1px;
+    padding-block: 20px;
+  }
+
+  .most-popular-sub-type::before {
+    content: "Most popular";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: rgb(113, 56, 242);
+    border-radius: 15px;
+    padding: 5px 10px;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -313,7 +393,7 @@ a {
     flex-direction: row;
     gap: 20px;
   }
-  
+
   .hero-image {
     width: 40vw;
   }
