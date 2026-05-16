@@ -144,14 +144,14 @@ a {
   flex-direction: column;
   align-items: center;
   padding-block: 25px;
-  margin: 50px 0 20px;
-  background: rgba(8, 16, 27);
-  border-top: solid rgba(12, 20, 32) 1px;
-  border-bottom: solid rgba(12, 20, 32) 1px;
+  margin-block: 40px;
+  background: rgb(8, 16, 27);
+  border-top: solid rgb(12, 20, 32) 1px;
+  border-bottom: solid rgb(12, 20, 32) 1px;
 }
 
 .features-span {
-  color: rgba(141, 73, 236);
+  color: rgb(141, 73, 236);
 }
 
 .features-title {
@@ -161,11 +161,11 @@ a {
 
 .features-content {
   font-size: clamp(14px, 4vw, 21px);
-  color: rgba(175, 183, 197);
+  color: rgb(175, 183, 197);
   margin-bottom: 20px;
 }
 
-.cards {
+.features-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -175,8 +175,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(13, 21, 33);
-  border: solid rgba(16, 25, 37) 1px;
+  background: rgb(13, 21, 33);
+  border: solid rgb(16, 25, 37) 1px;
   border-radius: 15px;
   width: 90%;
   height: 100px;
@@ -197,7 +197,7 @@ a {
 .features-card-content {
   font-size: clamp(11px, 1.8vw, 14px);
   width: 95%;
-  color: rgba(175, 183, 197);
+  color: rgb(175, 183, 197);
 }
 
 .features-card-anchor {
@@ -211,7 +211,7 @@ a {
 }
 
 .pricing-span {
-  color: rgba(141, 73, 236);
+  color: rgb(141, 73, 236);
 }
 
 .pricing-title {
@@ -221,7 +221,7 @@ a {
 
 .pricing-content {
   font-size: clamp(14px, 4vw, 21px);
-  color: rgba(175, 183, 197);
+  color: rgb(175, 183, 197);
   margin-bottom: 20px;
 }
 
@@ -229,7 +229,7 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: solid rgba(23, 31, 49) 1px;
+  border: solid rgb(23, 31, 49) 1px;
   width: 90%;
   border-radius: 15px;
 }
@@ -254,7 +254,7 @@ a {
     display: none;
   }
 
-  .cards {
+  .features-cards {
     flex-direction: row;
     justify-content: space-around;
     gap: 20px;
