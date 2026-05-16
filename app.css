@@ -12,6 +12,10 @@ body {
     color: white;
 }
 
+button {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .navbar {
         display: flex;
@@ -37,6 +41,7 @@ body {
 
     .nav-button {
         background: rgba(88, 36, 225);
+        border: solid rgba(113, 56, 242) 1px;
         color: white;
         padding: 10px 20px;
         font-size: 12px;
@@ -104,6 +109,7 @@ body {
 
     .hero-button-start-building {
         background-color: rgba(88, 36, 225);
+        border: solid rgba(113, 56, 242) 1px;
     }
 
     .hero-button-learn-more {
@@ -117,7 +123,61 @@ body {
         border-radius: 20px;
         box-shadow:
     0 0 40px rgba(124, 58, 237, 0.6),
-    0 30px 80px rgba(0, 0, 0, 0.6);
-    
+    0 30px 80px rgba(0, 0, 0, 0.6); 
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-block: 25px;
+        margin-block: 50px;
+        background: rgba(8, 16, 27);
+        border-top: solid rgba(12, 20, 32) 1px;
+        border-bottom: solid rgba(12, 20, 32) 1px;  
+    }
+
+    .features-span {
+        color: rgba(141, 73, 236);
+    }
+
+    .features-title {
+        font-size: clamp(30px, 8vw, 50px);
+        margin-block: 10px;
+    }
+
+    .features-content {
+        font-size: clamp(14px, 4vw, 21px);
+        color: rgba(175, 183, 197);
+        margin-bottom: 20px;
+    }
+
+    .features-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(13, 21, 33);
+        border: solid rgba(16, 25, 37) 1px;
+        border-radius: 15px;
+        width: 90%;
+        height: 100px;
+        margin-block: 5px;
+        gap: 10px;
+        padding-inline: 10px;
+    }
+
+    .features-card-icon {
+        width: clamp(60px, 10vw, 90px);
+    }
+
+    .features-card-title {
+        font-size: clamp(10px, 4vw, 25px);
+        margin-bottom: 5px;
+    }
+
+    .features-card-content {
+        font-size: clamp(11px, 1.8vw, 14px);
+        width: 95%;
+        color: rgba(175, 183, 197);
     }
 }
